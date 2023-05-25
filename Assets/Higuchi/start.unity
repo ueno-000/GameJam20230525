@@ -397,7 +397,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8c2b7b3ee9ba5684fad34276d2a3d663, type: 3}
-    m_FontSize: 42
+    m_FontSize: 41
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -408,7 +408,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u30FB\u30B9\u30DA\u30FC\u30B9\u30AD\u30FC\u3067\u30B8\u30E3\u30F3\u30D7\n\u30FB\u4F53\u529B\u304C0\u306B\u306A\u3063\u305F\u3089\u30B2\u30FC\u30E0\u30AA\u30FC\u30D0\u30FC\n\u30FB\u4F53\u529B\u306F\u3060\u3093\u3060\u3093\u6E1B\u3063\u3066\u3044\u304F\n\u30FB\u4EBA\u3092\u305F\u3079\u308B\u3068\u4F53\u529B\u306F\u304B\u3044\u3075\u304F\u3059\u308B\n\u30FB\u9577\u304F\u3059\u3059\u3093\u3067\u30B9\u30B3\u30A2\u3092\u306E\u3070\u305D\u3046"
+  m_Text: "\u30FB\u30B9\u30DA\u30FC\u30B9\u30AD\u30FC\u3067\u30B8\u30E3\u30F3\u30D7\n\u30FB\u4F53\u529B\u304C0\u306B\u306A\u3063\u305F\u3089\u30B2\u30FC\u30E0\u30AA\u30FC\u30D0\u30FC\n\u30FB\u4F53\u529B\u306F\u3060\u3093\u3060\u3093\u3078\u3063\u3066\u3044\u304F\n\u30FB\u4EBA\u3092\u305F\u3079\u308B\u3068\u4F53\u529B\u306F\u304B\u3044\u3075\u304F\u3059\u308B\n\u30FB\u9577\u304F\u3059\u3059\u3093\u3067\u30B9\u30B3\u30A2\u3092\u306E\u3070\u305D\u3046"
 --- !u!222 &549522085
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -608,7 +608,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -203, y: 268}
+  m_AnchoredPosition: {x: -203, y: 386.2}
   m_SizeDelta: {x: 169, y: 35.8908}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1349651418
@@ -644,7 +644,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u305B\u3064\u3081\u3044\n"
+  m_Text: "\n\u305B\u3064\u3081\u3044"
 --- !u!222 &1349651419
 CanvasRenderer:
   m_ObjectHideFlags: 0

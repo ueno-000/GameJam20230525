@@ -111,7 +111,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.72
 --- !u!114 &1462128411885152413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,4 +124,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 602c14ca42037b6428a15456e9105c24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scream: {fileID: 8300000, guid: d8a442d292bae7942b9eeddf27eb246d, type: 3}
+  _scream: {fileID: 8300000, guid: e702d62121163bf4887d40a68cc10b3d, type: 3}
+  _eat: {fileID: 8300000, guid: e140303b6d544c94faf347e8b5754009, type: 3}

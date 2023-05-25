@@ -52,7 +52,17 @@ public class PlayerValueController : MonoBehaviour
 
         _anim = GetComponent<Animator>();
     }
+    private void Update()
+    {
+       // _health--;
+        _heathSlider.value = _health;
 
+        if (_health <= 0)
+        {
+            GameManager.IsGameOver = true;
+            
+        }
+    }
     // Update is called once per frame
     void FixedUpdate()
     {

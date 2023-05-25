@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
-public class PlayerValueController : MonoBehaviour
+public class PlayerValueController : MonoBehaviour,Iitem,IddDamage
 {
 
     /// <summary>スライダー</summary>
@@ -54,13 +54,14 @@ public class PlayerValueController : MonoBehaviour
     }
     private void Update()
     {
-       // _health--;
         _heathSlider.value = _health;
+
+        _timeScore += Time.deltaTime;
 
         if (_health <= 0)
         {
             GameManager.IsGameOver = true;
-            
+            GameManager.Time = _timeScore;
         }
     }
     // Update is called once per frame
@@ -79,16 +80,18 @@ public class PlayerValueController : MonoBehaviour
             Debug.Log("無敵モード開始");
             time += Time.deltaTime;
 
-            _anim.SetBool("aaa",true);
+            _anim.SetBool("isMuteki",true);
 
             if (time >= _invincibleTime)
             {
                 Debug.Log("無敵モード終了");
                 time = 0;
                 _isInvincible = false;
+                _anim.SetBool("isMuteki", false);
             }
         }
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -96,5 +99,18 @@ public class PlayerValueController : MonoBehaviour
         {
             _isInvincible = true;
         }
+    }
+
+    public void Idddamage(int damage)
+    {
+        if (!_isInvincible)
+        {
+            _health -= damage;
+        }
+    }
+
+    public void AddHP(int _AddHP)
+    {
+        _health+= _AddHP;
     }
 }

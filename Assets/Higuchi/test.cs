@@ -13,7 +13,7 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.position -= new Vector3(Time.deltaTime * 5, 0);
     }
     private void OnTriggerEnter(Collider other)
     {

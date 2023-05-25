@@ -15,4 +15,15 @@ public class test : MonoBehaviour
     {
         
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log(1);
+        IddDamage aiai = other.gameObject.GetComponent<IddDamage>();
+        if (aiai != null)
+        {
+            aiai.Idddamage(7);
+
+        }
+    }
 }

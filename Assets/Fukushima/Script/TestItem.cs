@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TestItem : MonoBehaviour
 {
+
     public AudioClip _scream;
     public AudioClip _eat;
     public int _speed = 5;
@@ -12,6 +13,7 @@ public class TestItem : MonoBehaviour
     void Start()
     {
         Destroy(gameObject,deleteTime);
+
     }
 
     // Update is called once per frame
@@ -25,7 +27,7 @@ public class TestItem : MonoBehaviour
     {
         Debug.Log("“–‚½‚Á‚Ä‚é");
         //"@"“à‚ğplayer‚Ìobject–¼‚É•ÏX‚µ‚Ä‚­‚¾‚³‚¢ 
-        if (collision.gameObject.name == "TestPlayer")
+        if (collision.gameObject.name == "Player")
         {
             Debug.Log("TestPlayer‚É“–‚½‚Á‚Ä‚é");
             Iitem _item = collision.gameObject.GetComponent<Iitem>();

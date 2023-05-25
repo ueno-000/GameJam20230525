@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class test : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,7 +15,7 @@ public class NewBehaviourScript : MonoBehaviour
     {
         transform.position -= new Vector3(Time.deltaTime * 5, 0);
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.name == "Player")
         {
@@ -25,7 +25,7 @@ public class NewBehaviourScript : MonoBehaviour
         IddDamage aiai = other.gameObject.GetComponent<IddDamage>();
         if (aiai != null)
         {
-            aiai.Idddamage(7);
+            aiai.Idddamage(20);
         }
         }
     }

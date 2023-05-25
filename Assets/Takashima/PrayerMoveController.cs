@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PrayerMoveController : MonoBehaviour
 {
-    [SerializeField] private float _jumpPower;
+  /*  [SerializeField] */private float _jumpPower = 15;
     
 
     private Rigidbody2D _rb;
@@ -17,10 +17,8 @@ public class PrayerMoveController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        
-        
 
             if (Input.GetButtonDown("Jump") && isGround)
             {

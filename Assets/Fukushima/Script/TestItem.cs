@@ -6,16 +6,19 @@ public class TestItem : MonoBehaviour
 {
     public AudioClip _scream;
     public AudioClip _eat;
+    public int _speed = 5;
+    public float deleteTime = 5.0f;
     // Start is called before the first frame update
     void Start()
     {
-
+        Destroy(gameObject,deleteTime);
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        transform.position -= new Vector3(Time.deltaTime * _speed, 0);
+        
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
